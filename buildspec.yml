@@ -1,0 +1,28 @@
+#
+# code build manifest file
+#
+#
+version: 0.1
+
+environment_variables:
+  plaintext:
+    MY_PROP: "juan"
+
+phases:
+  install:
+    commands:
+      - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+      - echo running pre build - nothing to do...
+  build:
+    commands:
+      - echo Build on `date`
+      - mvn build
+  post_build:
+    commands:
+      - echo Nothing to do in the post_build phase...
+artifacts:
+  files:
+    - 'build/libs/*.jar'
+  discard-paths: yes
