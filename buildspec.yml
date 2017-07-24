@@ -18,7 +18,7 @@ phases:
   build:
     commands:
       - echo Build on `date`
-      - mvn build
+      - mvn install
   post_build:
     commands:
       - echo Nothing to do in the post_build phase...
