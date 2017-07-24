@@ -24,5 +24,6 @@ phases:
       - echo Nothing to do in the post_build phase...
 artifacts:
   files:
-    - 'build/libs/*.jar'
+    - 'appserver/distributions/glassfish/target/*.zip'
+    - 'appserver/distributions/web/target/*.zip'
   discard-paths: yes
